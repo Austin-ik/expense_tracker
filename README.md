@@ -25,15 +25,32 @@ A Django web application for tracking expenses, integrated with Azure Active Dir
 - Azure Active Directory account
 
 ## Setup Instructions
+1. **Clone the Repository:**
+   - Open your terminal or command prompt.
+   - Navigate to the directory where you want to clone the repository using the `cd` command.
+   - Run the command:
+     git clone https://github.com/Austin-ik/expense_tracker.git
+   - Change into the cloned directory:
+     cd expense_tracker
+     
 
-1. **Clone the repository:**
-   - Begin by cloning this repository to your local machine.
+2. **Create a Virtual Environment:**
+   - Ensure you have Python installed on your machine.
+   - Run the following command to create a virtual environment:
+   - 
+     python -m venv venv
+     
+   - Activate the virtual environment:
+     - **On Windows:**
+       venv\Scripts\activate
+     - **On macOS/Linux:**
+       source venv/bin/activate
+     
 
-2. **Create a virtual environment:**
-   - Set up a virtual environment to manage your project’s dependencies.
-
-3. **Install the required packages:**
-   - Use `pip` to install the necessary packages specified in the `requirements.txt` file.
+3. **Install the Required Packages:**
+   - Ensure the virtual environment is activated (you should see `(venv)` in your prompt).
+   - Install the necessary packages by running:
+     pip install -r requirements.txt
 
 4. **Configure Azure AD:**
    - Log in to the Azure portal and navigate to the **Azure Active Directory** section.
@@ -53,11 +70,13 @@ A Django web application for tracking expenses, integrated with Azure Active Dir
      - `AAD_CLIENT_SECRET` - Your application's Client Secret.
      - `AAD_TENANT_ID` - Your Azure AD Tenant ID.
 
-6. **Run database migrations:**
-   - Migrate your database to set up the necessary tables.
+6. **Run Database Migrations:**
+   - Migrate your database to set up the necessary tables by running:
+     python manage.py migrate
 
-7. **Start the development server:**
-   - Launch the Django development server to begin using the application.
+7. **Start the Development Server:**
+   - Launch the Django development server to begin using the application with the following command:
+     python manage.py runserver
 
 ## Configuration
 
