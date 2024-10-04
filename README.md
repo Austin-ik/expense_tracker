@@ -66,9 +66,9 @@ A Django web application for tracking expenses, integrated with Azure Active Dir
 5. **Set up your environment:**
    - Create a `.env` file in the root of your project directory. 
    - Add the following environment variables to the `.env` file with the values obtained from Azure AD:
-     - `AAD_CLIENT_ID` - Your application's Client ID.
-     - `AAD_CLIENT_SECRET` - Your application's Client Secret.
-     - `AAD_TENANT_ID` - Your Azure AD Tenant ID.
+     - `CLIENT_ID` - Your application's Client ID.
+     - `CLIENT_SECRET` - Your application's Client Secret.
+     - `TENANT_ID` - Your Azure AD Tenant ID.
 
 6. **Run Database Migrations:**
    - Migrate your database to set up the necessary tables by running:
